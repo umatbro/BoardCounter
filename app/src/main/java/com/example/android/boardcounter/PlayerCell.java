@@ -10,7 +10,7 @@ import android.widget.TextView;
  * Created by umat on 20.02.17.
  */
 
-public class PlayerCell {
+class PlayerCell {
     private int score;
     private LinearLayout background;
     private TextView playerName;
@@ -24,7 +24,7 @@ public class PlayerCell {
     private Button resetButton;
     private int backgroundColor;    // color of the layout background
 
-    public PlayerCell(LinearLayout background, TextView playerName, TextView scoreTextView, Button buttonSit, Button buttonStand, Button minus5, Button minus1, Button plus1, Button plus5, Button reset){
+    PlayerCell(LinearLayout background, TextView playerName, TextView scoreTextView, Button buttonSit, Button buttonStand, Button minus5, Button minus1, Button plus1, Button plus5, Button reset){
         this.score = 0;
         this.background = background;
         this.playerName = playerName;
@@ -132,7 +132,7 @@ public class PlayerCell {
     private void deactivatePlayer(){
         setActive(false);
     }
-    public void setBackgroundColor (String colorString){
+    void setBackgroundColor(String colorString){
         this.backgroundColor = Color.parseColor(colorString);
     }
 }
