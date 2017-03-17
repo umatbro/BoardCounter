@@ -1,6 +1,6 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">BoardCounter</string>
-    <string name="player1_name">Player 1</string>
+    <string name="player1_name"><xliff:g id="player1_name" example="Mati">%s</xliff:g></string>
     <string name="player2_name">Player 2</string>
     <string name="player3_name">Player 3</string>
     <string name="player4_name">Player 4</string>
@@ -8,4 +8,5 @@
     <string name="sit_to_table">Sit to table</string>
     <string name="stand_up">Stand up</string>
     <string name="reset">Reset</string>
+    <string name="change_name">Change name</string>
 </resources>
