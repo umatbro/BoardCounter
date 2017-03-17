@@ -26,20 +26,20 @@
                     android:id="@+id/player1_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player 1"
+                    android:text="@string/player1_name"
                     android:textSize="14sp"/>
 
                 <Button
                     android:id="@+id/player1_sit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sit to table"
+                    android:text="@string/sit_to_table"
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/player1_reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
+                    android:text="@string/reset"
                     android:visibility="gone"
                     android:layout_marginTop="16dp"/>
                 <TextView
@@ -88,7 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
-                    android:text="Stand up"/>
+                    android:text="@string/stand_up"/>
             </LinearLayout>
             <View
                 android:layout_width="1dp"
@@ -105,20 +105,20 @@
                     android:id="@+id/player2_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player 2"
+                    android:text="@string/player2_name"
                     android:textSize="14sp"/>
 
                 <Button
                     android:id="@+id/player2_sit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sit to table"
+                    android:text="@string/sit_to_table"
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/player2_reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
+                    android:text="@string/reset"
                     android:visibility="gone"
                     android:layout_marginTop="16dp"/>
 
@@ -167,7 +167,7 @@
                     android:id="@+id/player2_stand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stand up"
+                    android:text="@string/stand_up"
                     android:layout_marginTop="24dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -191,20 +191,20 @@
                     android:id="@+id/player3_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player 3"
+                    android:text="@string/player3_name"
                     android:textSize="14sp"/>
 
                 <Button
                     android:id="@+id/player3_sit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sit to table"
+                    android:text="@string/sit_to_table"
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/player3_reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
+                    android:text="@string/reset"
                     android:visibility="gone"
                     android:layout_marginTop="16dp"/>
 
@@ -253,7 +253,7 @@
                     android:id="@+id/player3_stand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stand up"
+                    android:text="@string/stand_up"
                     android:layout_marginTop="24dp"/>
             </LinearLayout>
             <View
@@ -271,7 +271,7 @@
                     android:id="@+id/player4_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player 4"
+                    android:text="@string/player4_name"
                     android:textSize="14sp"
                     />
 
@@ -279,13 +279,13 @@
                     android:id="@+id/player4_sit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sit to table"
+                    android:text="@string/sit_to_table"
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/player4_reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
+                    android:text="@string/reset"
                     android:visibility="gone"
                     android:layout_marginTop="16dp"/>
 
@@ -334,7 +334,7 @@
                     android:id="@+id/player4_stand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stand up"
+                    android:text="@string/stand_up"
                     android:layout_marginTop="24dp"/>
             </LinearLayout>
         </LinearLayout>
