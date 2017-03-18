@@ -84,17 +84,16 @@ public class MainActivity extends AppCompatActivity {
                 viewHolder.thumbnail = (View) convertView.findViewById(R.id.list_item_image);
                 viewHolder.title = (TextView) convertView.findViewById(R.id.list_item_text);
                 viewHolder.button = (Button) convertView.findViewById(R.id.list_item_button);
-                viewHolder.button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(getContext(), "Button was clicked for list item " + position, Toast.LENGTH_SHORT).show();
-                    }
-                });
                 convertView.setTag(viewHolder);
-            } else {
-                mainViewHolder = (ViewHolder) convertView.getTag();
-                mainViewHolder.title.setText(getItem(position));
             }
+            mainViewHolder = (ViewHolder) convertView.getTag();
+            mainViewHolder.button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getContext(), "Button was clicked for list item " + position, Toast.LENGTH_SHORT).show();
+                }
+            });
+            mainViewHolder.title.setText(getItem(position));
             return convertView;
         }
     }
