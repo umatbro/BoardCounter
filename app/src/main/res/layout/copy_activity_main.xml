@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/copy_activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.boardcounter.MainActivity">
@@ -26,28 +26,34 @@
                     android:id="@+id/player1_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player 1"
+                    android:text="@string/player1_name"
                     android:textSize="14sp"/>
 
                 <Button
                     android:id="@+id/player1_sit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sit to table"
+                    android:text="@string/sit_to_table"
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/player1_reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
+                    android:text="@string/reset"
                     android:visibility="gone"
                     android:layout_marginTop="16dp"/>
+                <TextView
+                    android:id="@+id/player1_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="46sp"
+                    android:text="0"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center_horizontal">
                     <Button
                         android:id="@+id/player1_minus5"
                         android:layout_width="0dp"
@@ -60,13 +66,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="-1"/>
-                    <TextView
-                        android:id="@+id/player1_score"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="46sp"
-                        android:text="0"
-                        android:padding="8dp"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
                     <Button
                         android:id="@+id/player1_plus1"
                         android:layout_width="0dp"
@@ -85,8 +87,8 @@
                     android:id="@+id/player1_stand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Stand up"/>
+                    android:layout_marginTop="24dp"
+                    android:text="@string/stand_up"/>
             </LinearLayout>
             <View
                 android:layout_width="1dp"
@@ -103,28 +105,35 @@
                     android:id="@+id/player2_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player 2"
+                    android:text="@string/player2_name"
                     android:textSize="14sp"/>
 
                 <Button
                     android:id="@+id/player2_sit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sit to table"
+                    android:text="@string/sit_to_table"
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/player2_reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
+                    android:text="@string/reset"
                     android:visibility="gone"
                     android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/player2_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="46sp"
+                    android:text="0"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center_horizontal">
                     <Button
                         android:id="@+id/player2_minus5"
                         android:layout_width="0dp"
@@ -137,13 +146,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="-1"/>
-                    <TextView
-                        android:id="@+id/player2_score"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="46sp"
-                        android:text="0"
-                        android:padding="8dp"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
                     <Button
                         android:id="@+id/player2_plus1"
                         android:layout_width="0dp"
@@ -162,8 +167,8 @@
                     android:id="@+id/player2_stand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stand up"
-                    android:layout_marginTop="8dp"/>
+                    android:text="@string/stand_up"
+                    android:layout_marginTop="24dp"/>
             </LinearLayout>
         </LinearLayout>
         <View
@@ -186,30 +191,35 @@
                     android:id="@+id/player3_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player 3"
+                    android:text="@string/player3_name"
                     android:textSize="14sp"/>
 
                 <Button
                     android:id="@+id/player3_sit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sit to table"
+                    android:text="@string/sit_to_table"
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/player3_reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
+                    android:text="@string/reset"
                     android:visibility="gone"
                     android:layout_marginTop="16dp"/>
 
-
+                <TextView
+                    android:id="@+id/player3_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="46sp"
+                    android:text="0"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center_horizontal">
                     <Button
                         android:id="@+id/player3_minus5"
                         android:layout_width="0dp"
@@ -222,13 +232,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="-1"/>
-                    <TextView
-                        android:id="@+id/player3_score"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="46sp"
-                        android:text="0"
-                        android:padding="8dp"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
                     <Button
                         android:id="@+id/player3_plus1"
                         android:layout_width="0dp"
@@ -247,8 +253,8 @@
                     android:id="@+id/player3_stand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stand up"
-                    android:layout_marginTop="8dp"/>
+                    android:text="@string/stand_up"
+                    android:layout_marginTop="24dp"/>
             </LinearLayout>
             <View
                 android:layout_width="1dp"
@@ -265,7 +271,7 @@
                     android:id="@+id/player4_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Player 4"
+                    android:text="@string/player4_name"
                     android:textSize="14sp"
                     />
 
@@ -273,22 +279,28 @@
                     android:id="@+id/player4_sit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sit to table"
+                    android:text="@string/sit_to_table"
                     android:visibility="gone"/>
                 <Button
                     android:id="@+id/player4_reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reset"
+                    android:text="@string/reset"
                     android:visibility="gone"
                     android:layout_marginTop="16dp"/>
 
+                <TextView
+                    android:id="@+id/player4_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="46sp"
+                    android:text="0"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center_horizontal">
                     <Button
                         android:id="@+id/player4_minus5"
                         android:layout_width="0dp"
@@ -301,14 +313,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="-1"/>
-                    <TextView
-                        android:id="@+id/player4_score"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="46sp"
-                        android:text="0"
-                        android:padding="8dp"/>
-
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
                     <Button
                         android:id="@+id/player4_plus1"
                         android:layout_width="0dp"
@@ -327,8 +334,8 @@
                     android:id="@+id/player4_stand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Stand up"
-                    android:layout_marginTop="8dp"/>
+                    android:text="@string/stand_up"
+                    android:layout_marginTop="24dp"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
