@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void generateListContent(){
-        for (int i = 0; i < 55; i++){
+        for (int i = 0; i < 10; i++){
             data.add("This is row number " + i);
         }
     }
