@@ -13,20 +13,41 @@
     <TextView
         android:id="@+id/list_item_text"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
         android:text="Test"
         android:textAllCaps="true"
         android:layout_marginLeft="26dp"
-        android:gravity="center_vertical"/>
+        android:layout_gravity="center_vertical"/>
 
-    <Button
-        android:id="@+id/list_item_button"
+    <TextView
+        android:id="@+id/list_item_score"
+        android:layout_gravity="center"
         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/list_item_button_minus"
+        android:layout_width="0dp"
+        android:background="@drawable/roundbutton"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:text="-" />
+    <Button
+        android:id="@+id/list_item_button_plus"
+        android:layout_width="0dp"
+        android:background="@drawable/roundbutton"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="center"
         android:layout_marginRight="24dp"
-        android:text="Add"/>
+        android:text="+" />
 
 </LinearLayout>

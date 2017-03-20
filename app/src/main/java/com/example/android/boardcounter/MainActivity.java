@@ -7,8 +7,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -48,19 +46,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu){
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsSelected(MenuItem item){
-//        int id = item.getItemId();
-//        if(id == R.id.action_settings){ return true; }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 
     /**
      * Video from https://www.youtube.com/watch?v=ZEEYYvVwJGY
@@ -83,11 +68,13 @@ public class MainActivity extends AppCompatActivity {
                 ViewHolder viewHolder = new ViewHolder();
                 viewHolder.thumbnail = (View) convertView.findViewById(R.id.list_item_image);
                 viewHolder.title = (TextView) convertView.findViewById(R.id.list_item_text);
-                viewHolder.button = (Button) convertView.findViewById(R.id.list_item_button);
+                viewHolder.score = (TextView) convertView.findViewById(R.id.list_item_score);
+                viewHolder.buttonMinus = (Button) convertView.findViewById(R.id.list_item_button_minus);
+                viewHolder.buttonPlus = (Button) convertView.findViewById(R.id.list_item_button_plus);
                 convertView.setTag(viewHolder);
             }
             mainViewHolder = (ViewHolder) convertView.getTag();
-            mainViewHolder.button.setOnClickListener(new View.OnClickListener() {
+            mainViewHolder.buttonPlus.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(getContext(), "Button was clicked for list item " + position, Toast.LENGTH_SHORT).show();
@@ -100,10 +87,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     public class ViewHolder {
-
         View thumbnail;
         TextView title;
-        Button button;
+        TextView score;
+        Button buttonMinus;
+        Button buttonPlus;
     }
 
 
